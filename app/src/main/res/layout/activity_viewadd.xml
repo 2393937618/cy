@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.viewadd"
+    android:orientation="vertical">
+    //顶部
+    <LinearLayout
+        android:id="@+id/data_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dbbackground">
+
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/top_return"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景点选取"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+    //景点排列
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="395dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            //第一个景点
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/ss_backgroundclor"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/jind2"
+                    android:button="@null"
+
+                    />
+                //简介
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="珠江夜游天字码头"
+                        android:layout_marginTop="1dp"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址：沿江中路200号天字码头"
+                        android:layout_marginTop="7dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="7dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总分"
+                            android:layout_marginTop="7dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="环境"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="30dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="30dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8.9"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8.2"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="39dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8.3"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="39dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            //第二个景点
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/ss_backgroundclor"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/jind3"
+                    android:button="@null"
+
+                    />
+                //简介
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="珠江夜游天字码头"
+                        android:layout_marginTop="1dp"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="地址：沿江中路200号天字码头"
+                        android:layout_marginTop="7dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="7dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总分"
+                            android:layout_marginTop="7dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="环境"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="30dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="30dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8.9"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8.2"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="39dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8.3"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginLeft="39dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    //底部按钮
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="53dp"
+            android:text="确定"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

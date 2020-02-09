@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdf6">
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="497dp"
+        app:srcCompat="@drawable/xiugaishouchangjia2" />
+
+    <ImageView
+        android:id="@+id/xiugaishouchangjiabtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imageView28"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/xiugaishouchangjia3" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/xiugaishouchangjiabtn4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/xiugaishouchangjia2" />
+
+    <ImageView
+        android:id="@+id/xiugaishouchangjiabtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/xiugaishouchangjiabtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/xiugaishouchangjia4" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/xiugaishouchangjiabtn3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        app:srcCompat="@drawable/xiugaishouchangjia2" />
+
+    <ImageView
+        android:id="@+id/xiugaishouchangjiabtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@+id/imageView31"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/xiugaishouchangjia6" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/xiugaishouchangjia1" />
+
+    <ImageView
+        android:id="@+id/xiugaishouchangjiabtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imageView31"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/xiugaishouchangjia5" />
+</RelativeLayout>

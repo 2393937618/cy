@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.grogshopActivity">
+    //顶部
+    <LinearLayout
+        android:id="@+id/add_grogshop_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/top_return"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加酒店"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            />
+        <!--<ImageButton
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:background="@drawable/grogshop_sx"
+             android:layout_marginLeft="70dp"
+             android:layout_marginTop="10dp"
+             />-->
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/grogshop_px"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/view_spingarr"
+            />
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/grogshop_ss"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/add_grogshop_top"
+        android:background="@drawable/news_ss"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/grogshop_jx"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/grogshop_ss"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#EBEBEB">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/grogshop_logo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精选酒店"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/grogshop_jx">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image1"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd1"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="笑晓酒店"
+                        android:layout_alignTop="@+id/item_back"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@+id/layout1"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image2"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd2"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back1"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="酒店之家"
+                        android:layout_alignTop="@+id/item_back1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@+id/layout2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image3"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd3"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back2"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="广州酒店"
+                        android:layout_alignTop="@+id/item_back2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@+id/layout2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image4"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd_1"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back4"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="深圳三星"
+                        android:layout_alignTop="@+id/item_back4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@+id/layout2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image5"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd_2"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back5"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="饭饭酒店"
+                        android:layout_alignTop="@+id/item_back5"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back5"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@+id/layout2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image6"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd_3"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back6"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="上海酒店"
+                        android:layout_alignTop="@+id/item_back6"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back6"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout7"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@+id/layout2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image7"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd_4"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back7"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="长城酒店"
+                        android:layout_alignTop="@+id/item_back7"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back7"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout8"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@+id/layout2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image8"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd_5"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back8"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="东方酒店"
+                        android:layout_alignTop="@+id/item_back8"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back8"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout9"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_below="@+id/layout2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/image9"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/jd_6"
+
+                        />
+                    <ImageView
+                        android:id="@+id/item_back9"
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/name_hodometer"
+
+                        />
+                    <TextView
+                        android:id="@+id/grogshopitem_name9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="想你小酒馆"
+                        android:layout_alignTop="@+id/item_back9"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/grogshopitem_address9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="点击添加"
+                        android:layout_alignTop="@+id/item_back9"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="220dp"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成行程"
+        android:layout_below="@+id/scrollview"
+        />
+
+
+
+
+
+    <!--
+        <ListView
+            android:id="@+id/grogshop_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grogshop_jx"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"></ListView>
+            -->
+
+
+
+
+
+
+</RelativeLayout>

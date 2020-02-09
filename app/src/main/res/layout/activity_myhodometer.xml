@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.myhodometer">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行程本"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@drawable/fm21"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageButton
+                android:id="@+id/item_back"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/name_hodometer"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="七月行程"
+                android:layout_alignTop="@+id/item_back"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:id="@+id/tj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="点击添加"
+                android:layout_alignTop="@+id/item_back"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="220dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@drawable/fm20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageButton
+                android:id="@+id/item_back1"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/name_hodometer"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="深圳游"
+                android:layout_alignTop="@+id/item_back1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="点击添加"
+                android:layout_alignTop="@+id/item_back1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="220dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@drawable/fm14"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageButton
+                android:id="@+id/item_back2"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/name_hodometer"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="佛山行"
+                android:layout_alignTop="@+id/item_back2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="点击添加"
+                android:layout_alignTop="@+id/item_back2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="220dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="下一步"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="5dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

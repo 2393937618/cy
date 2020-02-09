@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdf6">
+
+    <ImageView
+        android:id="@+id/shouchangjiabtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/shizhizhuye3" />
+
+    <ImageView
+        android:id="@+id/shouchangjiaview1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/shouchangjiabtn1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/shouchangjiabtn1"
+        android:layout_toRightOf="@+id/shouchangjiabtn1"
+        app:srcCompat="@drawable/quanbushouchang9" />
+
+    <ImageView
+        android:id="@+id/shouchangjiaview2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/shouchangjiaview1"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/shouchangjiaview1"
+        android:layout_toRightOf="@+id/shouchangjiaview1"
+        app:srcCompat="@drawable/quanbushouchang13" />
+
+    <ImageView
+        android:id="@+id/shouchangjiaview3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/shouchangjiaview1"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/shouchangjiaview2"
+        android:layout_toRightOf="@+id/shouchangjiaview2"
+        app:srcCompat="@drawable/quanbushouchang7" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shouchangjiabtn1"
+        android:layout_alignStart="@+id/shouchangjiabtn1"
+        android:layout_below="@+id/shouchangjiabtn1"
+        android:layout_marginTop="16dp"
+        android:id="@+id/searchView" />
+
+    <ListView
+        android:id="@+id/shouchangjialist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/searchView"
+        android:layout_alignStart="@+id/searchView"
+        android:layout_below="@+id/searchView"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

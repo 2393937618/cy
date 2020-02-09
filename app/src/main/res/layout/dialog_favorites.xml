@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdf6">
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="494dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/jiarushouchangjia1" />
+
+    <ImageView
+        android:id="@+id/jiarushouchanjiabtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imageView34"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/jiarushouchangjia4" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jiarushouchanjiabtn3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/jiarushouchangjia2" />
+
+    <ImageView
+        android:id="@+id/jiarushouchanjiabtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/imageView35"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/jiarushouchangjia6" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView35"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/jiarushouchangjia3" />
+
+    <ImageView
+        android:id="@+id/jiarushouchanjiabtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@+id/imageView35"
+        android:layout_alignEnd="@+id/jiarushouchanjiabtn2"
+        android:layout_alignRight="@+id/jiarushouchanjiabtn2"
+        android:layout_marginBottom="11dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/jiarushouchangjia5" />
+</RelativeLayout>

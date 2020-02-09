@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.search_result">
+
+    //顶部
+    <LinearLayout
+        android:id="@+id/add_search_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/close_btn"
+                android:layout_width="280dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/news_ss1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户输入的内容"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="16dp"
+                android:textSize="17sp"/>
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btn"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:background="@drawable/search_qx"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"/>
+
+
+    </LinearLayout>//顶部结束
+
+    <LinearLayout
+        android:id="@+id/search_zh_btn"
+        android:layout_below="@+id/add_search_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/search_result_pst"
+            android:layout_gravity="center"
+            app:pstsIndicatorColor="@color/backgroundcolor"
+            app:pstsDividerColor="@color/select_button"
+            app:pstsIndicatorHeight="5dp"
+            android:layout_centerHorizontal="true"
+            >
+        </com.astuetz.PagerSlidingTabStrip>
+
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/search_group"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/search_button1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:button="@null"-->
+                <!--android:text="综合"-->
+                <!--android:textColor="@drawable/select"-->
+                <!--android:textSize="19sp"-->
+                <!--android:layout_marginLeft="25dp"-->
+                <!--android:layout_marginTop="15dp"/>-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/search_button2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:button="@null"-->
+                <!--android:text="游记"-->
+                <!--android:textColor="@drawable/select"-->
+                <!--android:textSize="19sp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="15dp"/>-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/search_button3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:button="@null"-->
+                <!--android:text="攻略"-->
+                <!--android:textColor="@drawable/select"-->
+                <!--android:textSize="19sp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="15dp"/>-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/search_button4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:button="@null"-->
+                <!--android:text="问答"-->
+                <!--android:textColor="@drawable/select"-->
+                <!--android:textSize="19sp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="15dp"/>-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/search_button5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:button="@null"-->
+                <!--android:text="用户"-->
+                <!--android:textColor="@drawable/select"-->
+                <!--android:textSize="19sp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="15dp"/>-->
+
+        <!--</RadioGroup>-->
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/search_result_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_zh_btn"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

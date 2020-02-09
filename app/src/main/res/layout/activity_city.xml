@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context=".main.cityActivity"
+    >
+    //顶部
+    <LinearLayout
+        android:id="@+id/add_city_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/top_return"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生成行程"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+    //按钮
+    <LinearLayout
+        android:id="@+id/add_city_btn"
+        android:layout_below="@+id/add_city_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="城市"
+                android:textSize="18sp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="15dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="景点"
+                android:textSize="18sp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="15dp"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    //城市排列
+    <ScrollView
+        android:layout_below="@+id/add_city_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/add_finsh_go"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            //出发
+            <LinearLayout
+                android:id="@+id/add_city_action"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/ss_backgroundclor"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/begin"
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="请输入"
+                    android:textSize="20sp"
+                    android:background="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="(出发城市)"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_city"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+
+
+
+
+            //添加城市
+            <LinearLayout
+
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/ss_backgroundclor"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/add_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/city_add"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="继续添加城市"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            //返程城市
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/ss_backgroundclor"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/end_city"
+                    />
+                    <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="请输入"
+                        android:background="@null"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="(返回城市)"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    //底部
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/add_finsh_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:textSize="15sp"
+
+        />
+
+
+
+
+
+</RelativeLayout>

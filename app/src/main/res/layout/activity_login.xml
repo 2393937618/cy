@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fffdf6"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dengluyebtn1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/shizhizhuye3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/dengluyebtn1"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/denlu" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/dengluyebtn1"
+        android:layout_alignStart="@+id/dengluyebtn1"
+        android:layout_below="@+id/dengluyebtn1"
+        android:layout_marginTop="57dp"
+        app:srcCompat="@drawable/personal2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="62dp"
+        app:srcCompat="@drawable/atar" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8"
+        android:layout_toRightOf="@+id/imageView8"
+        android:ems="10"
+        android:inputType="textPersonName"  />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView8"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/dlock" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_toEndOf="@+id/imageView9"
+        android:layout_toRightOf="@+id/imageView9"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/dengluyebtn2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/submit"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignRight="@+id/password"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/sss" />
+
+    <ImageView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_below="@+id/imageView9"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/denlu" />
+
+    <ImageView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/submit"
+        android:layout_alignEnd="@+id/dengluyebtn2"
+        android:layout_alignRight="@+id/dengluyebtn2"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/zhuche" />
+
+    <ImageView
+        android:id="@+id/dengluyebtn5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/submit"
+        android:layout_alignLeft="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginBottom="12dp"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/weixin" />
+
+    <ImageView
+        android:id="@+id/dengluyebtn6"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/dengluyebtn5"
+        android:layout_alignEnd="@+id/imageView6"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/osociallogo" />
+
+    <ImageView
+        android:id="@+id/dengluyebtn7"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/dengluyebtn6"
+        android:layout_marginStart="-20dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/dengluyebtn6"
+        android:layout_toRightOf="@+id/dengluyebtn6"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdf6">
+
+    <ImageView
+        android:id="@+id/attention_photo"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="18dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/tx1" />
+
+    <TextView
+        android:id="@+id/attention_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/attention_photo"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_toEndOf="@+id/attention_photo"
+        android:layout_toRightOf="@+id/attention_photo"
+        android:text="用户名"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/attention_intro"
+        android:layout_width="wrap_content"
+        android:text="十二万九千六百年后，我们再次相遇"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/attention_photo"
+        android:layout_alignLeft="@+id/attention_username"
+        android:layout_alignStart="@+id/attention_username"
+        />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/attention_photo"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/fensi4" />
+</RelativeLayout>
+

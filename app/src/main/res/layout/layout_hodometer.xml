@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:background="@drawable/fm21"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <ImageButton
+        android:id="@+id/item_back"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/name_hodometer"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="行程本名称"
+        android:layout_alignTop="@+id/item_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>

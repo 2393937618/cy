@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdf6">
+
+    <ImageView
+        android:id="@+id/diankaishouchangjiabtn1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/shizhizhuye3" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/diankaishouchangjiabtn1"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/diankaishouchangjia8" />
+
+    <ImageView
+        android:id="@+id/diankaishouchangjiabtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/diankaishouchangjiabtn1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/diankaishouchangjiabtn1"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/diankaishouchangjia7" />
+
+    <ImageView
+        android:id="@+id/diankaishouchangjiabtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/diankaishouchangjiabtn2"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/diankaishouchangjia11" />
+
+    <ListView
+        android:id="@+id/diankaishouchangjialist"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignLeft="@+id/diankaishouchangjiabtn1"
+        android:layout_alignStart="@+id/diankaishouchangjiabtn1"
+        android:layout_below="@+id/diankaishouchangjiabtn1"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

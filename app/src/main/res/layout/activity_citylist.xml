@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    //搜索框
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </SearchView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        //定位城市
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位"
+            android:textSize="18sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="5sp"/>
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:src="@drawable/local_country"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp">
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+
+        <!-- 选中索引时，屏幕中间显示的大写字母 -->
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="#aaffffff"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="#aa000000"
+            android:textSize="30sp" />
+
+        <!-- 右侧快速索引列表 -->
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#d7d7d7"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

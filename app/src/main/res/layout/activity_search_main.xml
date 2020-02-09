@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.search_main"
+    android:orientation="vertical">
+
+    //顶部
+    <LinearLayout
+        android:id="@+id/add_search_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/top_return"
+            />
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="请输入地点"/>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:text="确定"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/add_search_top">
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/search_jd"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/search_ms"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            />
+        <ImageButton
+            android:id="@+id/grogshop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/seqarch_sj"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/search_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/search_btn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景点"
+            android:textSize="20sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美食"
+            android:textSize="20sp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒店"
+            android:textSize="20sp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/search_text">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_history" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_history_text"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_delete"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/search_history"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

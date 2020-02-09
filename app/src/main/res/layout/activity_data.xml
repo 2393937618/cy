@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/data_top"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/false_data2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择日期"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/data_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:text="开始时间" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView16"
+                android:textSize="15sp"
+                android:layout_marginLeft="100dp"
+                android:text="返程时间" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/begintextview"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="点击输入时间" />
+
+            <TextView
+                android:id="@+id/finishtextview"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="点击输入时间" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/begindate"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/datapagenext"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <DatePicker
+        android:id="@+id/finishdate"
+        android:layout_width="300dp"
+        android:layout_height="365dp"
+        android:layout_alignLeft="@+id/begindate"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        />
+
+
+    <Button
+        android:id="@+id/datapagenext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:text="下一步"
+        android:enabled="false"/>
+
+</RelativeLayout>

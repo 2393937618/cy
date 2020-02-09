@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdf6">
+
+
+    <ImageView
+        android:id="@+id/shizhizhuyebtn1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/shizhizhuye3" />
+
+    <ImageView
+        android:id="@+id/shizhizhuyeview1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/shizhizhuyebtn1"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/shizhizhuye6" />
+
+    <ImageView
+        android:id="@+id/shizhizhuyeview2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/shizhizhuyeview1"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/shizhizhuye4" />
+
+
+    <LinearLayout
+        android:id="@+id/shizhizhuyelin1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shizhizhuyebtn1"
+        android:layout_alignStart="@+id/shizhizhuyebtn1"
+        android:layout_below="@+id/shizhizhuyeview2"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lin1-1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye1" />
+
+        <ImageView
+            android:id="@+id/lin1-2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye7" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/shizhizhuyelin2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shizhizhuyebtn1"
+        android:layout_alignStart="@+id/shizhizhuyebtn1"
+        android:layout_below="@+id/shizhizhuyelin1"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lin2-1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/gerenxinxi3" />
+
+        <ImageView
+            android:id="@+id/lin2-2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye7" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shizhizhuyeview3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/shizhizhuyelin2"
+        app:srcCompat="@drawable/shizhizhuye4" />
+
+
+    <LinearLayout
+        android:id="@+id/shizhizhuyelin3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shizhizhuyebtn1"
+        android:layout_alignStart="@+id/shizhizhuyebtn1"
+        android:layout_below="@+id/shizhizhuyeview3"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lin3-1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/tongzhishizhi7" />
+
+        <ImageView
+            android:id="@+id/lin3-2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="240dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye7" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/shizhizhuyelin4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shizhizhuyebtn1"
+        android:layout_alignStart="@+id/shizhizhuyebtn1"
+        android:layout_below="@+id/shizhizhuyelin3"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lin4-1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/yinsishizhi7" />
+
+        <ImageView
+            android:id="@+id/lin4-2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="240dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye7" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/shizhizhuyelin5"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shizhizhuyebtn1"
+        android:layout_alignStart="@+id/shizhizhuyebtn1"
+        android:layout_below="@+id/shizhizhuyelin4"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lin5-1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye1" />
+
+        <ImageView
+            android:id="@+id/lin5-2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye7" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shizhizhuyeview4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/shizhizhuyelin5"
+        app:srcCompat="@drawable/shizhizhuye4" />
+
+
+    <LinearLayout
+        android:id="@+id/shizhizhuyelin6"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shizhizhuyebtn1"
+        android:layout_alignStart="@+id/shizhizhuyebtn1"
+        android:layout_below="@+id/shizhizhuyeview4"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lin6-1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye1" />
+
+        <ImageView
+            android:id="@+id/lin6-2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shizhizhuyelin7"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shizhizhuyebtn1"
+        android:layout_alignStart="@+id/shizhizhuyebtn1"
+        android:layout_below="@+id/shizhizhuyelin6"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lin7-1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye1" />
+
+        <ImageView
+            android:id="@+id/lin7-2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye7" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/shizhizhuyelin8"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/shizhizhuyebtn1"
+        android:layout_alignStart="@+id/shizhizhuyebtn1"
+        android:layout_below="@+id/shizhizhuyelin7"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lin8-1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye1" />
+
+        <ImageView
+            android:id="@+id/lin8-2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/shizhizhuye7" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.needActivity"
+    android:orientation="vertical"
+    >
+    //顶部布局
+    <LinearLayout
+        android:id="@+id/data_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/top_return"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基本需求"
+            android:textSize="20sp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>//顶部按钮结束
+
+
+
+    //按钮总布局
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/data_top"
+        android:layout_above="@+id/next_country">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            //广告位布局
+            <LinearLayout
+                android:id="@+id/add_need_gg"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+
+                android:background="@drawable/fm13"
+
+                >
+
+                <ImageButton
+                    android:id="@+id/photo_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/need_add"/>
+            </LinearLayout>//广告位布局结束
+
+            //总按钮布局
+            <LinearLayout
+                android:layout_below="@+id/add_need_gg"
+                android:id="@+id/add_need_allbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="旅行人数"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+                //人数按钮布局
+                <LinearLayout
+                    android:id="@+id/add_need_peoplebtn"
+                    android:layout_below="@+id/add_need_allbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/peopleButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape"
+                            android:text="1-3 人"
+                            android:button="@null"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:textColor="@drawable/select"/>
+                        <RadioButton
+                            android:id="@+id/peopleButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape"
+                            android:text="4-6 人"
+                            android:button="@null"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:textColor="@drawable/select"/>
+                        <RadioButton
+                            android:id="@+id/peopleButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape"
+                            android:text="7人及以上"
+                            android:button="@null"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:textColor="@drawable/select"/>
+                    </RadioGroup>
+                </LinearLayout>//人数按钮布局结束
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/add_need_allbtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/add_need_allbtn">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="节奏偏好"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/add_need_hobbitybtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:id="@+id/hobbity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/hobbitybutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/shape"
+                                android:text="轻松（4h-6h）"
+                                android:button="@null"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@drawable/select"/>
+                            <RadioButton
+                                android:id="@+id/hobbitybutton1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/shape"
+                                android:text="适中（7h-8h）"
+                                android:button="@null"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@drawable/select"/>
+                            <RadioButton
+                                android:id="@+id/hobbitybutton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:background="@drawable/shape"
+                                android:text="紧凑（10h+）"
+                                android:button="@null"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@drawable/select"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="主题偏好"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:id="@+id/checkbox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:button="@null"
+                            android:background="@drawable/shape"
+                            android:text="人文"
+                            android:textColor="@drawable/select"/>
+
+                        <CheckBox
+                            android:id="@+id/checkbox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:button="@null"
+                            android:background="@drawable/shape"
+                            android:text="自然"
+                            android:textColor="@drawable/select"/>
+                        <CheckBox
+                            android:id="@+id/checkbox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:button="@null"
+                            android:background="@drawable/shape"
+                            android:text="美食"
+                            android:textColor="@drawable/select"/>
+
+                        <CheckBox
+                            android:id="@+id/checkbox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:button="@null"
+                            android:background="@drawable/shape"
+                            android:text="摄影"
+                            android:textColor="@drawable/select"/>
+
+                        <CheckBox
+                            android:id="@+id/checkbox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:button="@null"
+                            android:background="@drawable/shape"
+                            android:text="历史"
+                            android:textColor="@drawable/select"/>
+
+                        <CheckBox
+                            android:id="@+id/checkbox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:button="@null"
+                            android:background="@drawable/shape"
+                            android:text="购物"
+                            android:textColor="@drawable/select"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预算"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/moneyButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape"
+                            android:text="3000以下"
+                            android:button="@null"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:textColor="@drawable/select"/>
+                        <RadioButton
+                            android:id="@+id/moneyButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape"
+                            android:text="3000-8000"
+                            android:button="@null"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:textColor="@drawable/select"/>
+                        <RadioButton
+                            android:id="@+id/moneyButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/shape"
+                            android:text="8000及以上"
+                            android:button="@null"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:textColor="@drawable/select"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/next_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:textSize="15sp"
+
+        />
+</RelativeLayout>

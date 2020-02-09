@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MyJourney">
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的行程本"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="110dp"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/journey_back"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/layout1"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            >
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:background="@drawable/fm1"
+                />
+            <ImageView
+                android:id="@+id/item_back"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/name_hodometer"
+
+                />
+            <TextView
+                android:id="@+id/gz"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="广州游"
+                android:layout_alignTop="@+id/item_back"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="点击更改"
+                android:layout_alignTop="@+id/item_back"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="220dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/layout2"
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            >
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:background="@drawable/fm2"
+                />
+            <ImageView
+                android:id="@+id/item_back1"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/name_hodometer"
+
+                />
+            <TextView
+                android:id="@+id/grogshopitem_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="佛山行"
+                android:layout_alignTop="@+id/item_back1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+            <TextView
+                android:id="@+id/grogshopitem_address1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="点击更改"
+                android:layout_alignTop="@+id/item_back1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="220dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    //底部布局
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        >
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="8dp"
+            >
+            <RadioButton
+                android:id="@+id/bottom_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/planetearth_three"
+                android:button="@null"
+                android:text="推荐"
+                android:drawablePadding="2dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="3dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_btn2"
+                android:drawableTop="@drawable/saturn"
+                android:button="@null"
+                android:text="发现"
+                android:textColor="@color/js_one"
+                android:drawablePadding="2dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="3dp"/>
+            <ImageButton
+                android:id="@+id/bottom_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/add"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_btn3"
+                android:drawableTop="@drawable/rectangularsuitcase"
+                android:button="@null"
+                android:text="行程"
+                android:drawablePadding="2dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="3dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_btn4"
+                android:drawableTop="@drawable/people"
+                android:button="@null"
+                android:text="我的"
+                android:drawablePadding="2dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="3dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>//底部布局结束
+
+</RelativeLayout>

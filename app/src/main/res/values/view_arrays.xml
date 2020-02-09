@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="view_spingarr">
+        <item>综合</item>
+        <item>按从远到近</item>
+        <item>按从近到远</item>
+    </string-array>
+</resources>

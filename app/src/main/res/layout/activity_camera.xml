@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.cameraActivity">
+
+    <TextView
+        android:layout_marginTop="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请先为你的内容加一个tag~~"
+        android:layout_marginLeft="15dp"
+        android:textSize="25sp"/>
+    <LinearLayout
+        android:id="@+id/centent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true">
+        <ImageButton
+            android:id="@+id/travel"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/youji"/>
+        <ImageButton
+            android:id="@+id/strategy"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/gonglie"/>
+        <ImageButton
+            android:id="@+id/dynamic"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/dongtai"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/close_camera"/>
+
+</RelativeLayout>

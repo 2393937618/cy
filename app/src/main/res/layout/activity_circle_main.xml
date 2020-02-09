@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.circle_main">
+
+    //顶部
+    <LinearLayout
+        android:id="@+id/add_cirle_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/top_return"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圈子"
+            android:textSize="20sp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>//顶部标题栏结束
+    //热搜总布局
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_cirle_top"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热搜圈子"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/circle_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            //第一行开始
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/circle_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开心圈子"
+                    android:button="@null"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="45dp"/>
+                <RadioButton
+                    android:id="@+id/circle_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生活圈子"
+                    android:button="@null"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="95dp"/>
+
+            </LinearLayout>//第一行结束
+
+
+
+            //第二行开始
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/circle_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="明星娱乐"
+                    android:button="@null"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="45dp"/>
+                <RadioButton
+                    android:id="@+id/circle_btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时尚生活"
+                    android:button="@null"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="95dp"/>
+
+            </LinearLayout>//第二行结束
+
+
+
+            //第三行开始
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/circle_btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="健身圈子"
+                    android:button="@null"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="45dp"/>
+                <RadioButton
+                    android:id="@+id/circle_btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电影频道"
+                    android:button="@null"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="95dp"/>
+
+            </LinearLayout>//第三行结束
+
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/fg"/>
+
+
+
+        //评论按钮布局
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RadioGroup
+                android:id="@+id/circle_rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/circle_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="圈子"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="100dp"/>
+                <RadioButton
+                    android:id="@+id/circle_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="榜单"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="100dp"/>
+            </RadioGroup>
+        </LinearLayout>//评论按钮布局结束
+
+        //圈子展示布局
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            //圈子标题布局
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开心圈子"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/hot"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="15dp"/>
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/more"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="3dp"/>
+
+            </LinearLayout>//圈子标题布局结束
+            //评论语句
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/fm19"/>
+                //不包含图片圈子评论
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="6dp">
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="65dp"
+                        android:text="哈哈哈"
+                        android:textSize="16sp"
+                        />
+                    //圈子发布人信息
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="zzk"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2019年5月21日"
+                            android:layout_marginLeft="90dp"/>
+                    </LinearLayout>//圈子发布人信息结束
+                </LinearLayout>//不包含图片评论布局
+
+
+            </LinearLayout>//评论语句结束
+        </LinearLayout>//圈子展示布局结束
+
+
+
+    </LinearLayout>//热搜总布局结束
+
+
+
+
+
+</RelativeLayout>
+

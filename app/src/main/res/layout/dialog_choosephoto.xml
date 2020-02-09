@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:src="@drawable/juxing2"
+        android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="从相册选中"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:src="@drawable/juxing2"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:src="@drawable/juxing2"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

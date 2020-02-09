@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lxc.cy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <application
+        android:name=".other.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tx9"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="fSkVPBmYAGZE9oChKHsh6PpCM1EeF4Kn" />
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.dataActivity" />
+        <activity android:name=".main.needActivity" />
+        <activity android:name=".main.ChooseView" />
+        <activity android:name=".main.grogshopActivity" />
+        <activity android:name=".main.informActivity" />
+        <activity android:name=".main.newsActivity" />
+        <activity android:name=".main.cameraActivity" />
+        <activity android:name=".main.circleActivity" />
+        <activity android:name=".main.citylistActivity" />
+        <activity android:name=".main.commentActivity" />
+        <activity android:name=".main.destination" />
+        <activity android:name=".main.editActivity" />
+        <activity android:name=".main.FinishLoad" />
+        <activity android:name=".main.circle_main" />
+        <activity android:name=".main.grogshop_screen" />
+        <activity android:name=".main.grogshop_selector" />
+        <activity android:name=".main.hodometer_list" />
+        <activity android:name=".main.replynews" />
+        <activity android:name=".main.search_main" />
+        <activity android:name=".main.personal_home" />
+        <activity android:name=".main.viewadd" />
+        <activity android:name=".main.search_result" />
+        <activity android:name=".main.beijintouxian" />
+        <activity android:name=".main.loginActivity" />
+        <activity android:name=".main.registerActivity" />
+        <activity android:name=".main.FavoritesActivity" />
+        <activity android:name=".main.FinishVideoActivity" />
+        <activity android:name=".main.FinishTravelActivity" />
+        <activity android:name=".main.FinishPhotoActivity" />
+        <activity android:name=".main.SettingPerson" />
+        <activity android:name=".main.PersonAttention" />
+        <activity android:name=".main.SettingMain" />
+        <activity android:name=".main.FavoritesMain" />
+        <activity android:name=".main.AnswerMain" />
+        <activity android:name=".main.Personfans" />
+        <activity android:name=".main.InformManage" />
+        <activity android:name=".main.NewFavorites" />
+        <activity android:name=".main.UpdateFavorites" />
+        <activity android:name=".main.ChooseFavorites" />
+        <activity android:name=".main.PrivacySetting" />
+        <activity android:name=".main.cityActivity" />
+        <activity android:name=".main.viewActivity" />
+        <activity android:name=".main.EatingActivity" />
+        <activity android:name=".main.EditText" />
+        <activity android:name=".main.myhodometer" />
+        <activity android:name=".main.MyJourney" />
+        <activity android:name=".main.attention_main"/>
+
+
+        <activity
+            android:name="com.donkingliang.imageselector.ImageSelectorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.donkingliang.imageselector.PreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.donkingliang.imageselector.ClipImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+        <!-- Android 7.0 文件共享配置，必须配置 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

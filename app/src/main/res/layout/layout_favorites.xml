@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/diankairel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/quanbushouchanglin1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/linview1-1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="55dp"
+            app:srcCompat="@drawable/quanbushouchang5" />
+
+        <ImageView
+            android:id="@+id/linview1-2"
+            android:layout_width="78dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/jind3" />
+
+        <LinearLayout
+            android:id="@+id/quanbushouchanglin1-1"
+            android:layout_width="237dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/quanbushouchanglin1-1-1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/linview1-3"
+                    android:layout_width="90dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="40dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/quanbushouchang3" />
+
+                <TextView
+                    android:id="@+id/lintext1-1"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/quanbushouchanglin1-1-2"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/linview1-4"
+                    android:layout_width="88dp"
+                    android:layout_height="19dp"
+                    app:srcCompat="@drawable/diankaishouchangjia9" />
+
+                <TextView
+                    android:id="@+id/lintext1-2"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
