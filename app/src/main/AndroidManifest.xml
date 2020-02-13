@@ -95,6 +95,7 @@
         <activity android:name=".main.myhodometer" />
         <activity android:name=".main.MyJourney" />
         <activity android:name=".main.attention_main"/>
+        <activity android:name=".main.xc.XcActivity"/>
 
 
         <activity

@@ -36,13 +36,13 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/xc_item_view2"
-        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
+        android:layout_alignParentStart="true"
         android:layout_marginBottom="-39dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
         android:adjustViewBounds="true"
-        app:srcCompat="@drawable/shouchangjia10" />
+        app:srcCompat="@drawable/xinchengbenmingcheng" />
 
     <TextView
         android:id="@+id/xingchengbenmingcheng"
@@ -56,15 +56,15 @@
         android:textSize="24sp" />
 
     <ImageButton
-        android:id="@+id/shouchangjiabtn"
+        android:id="@+id/xinchengbenbtn"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignBottom="@+id/xingchengbenmingcheng"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginBottom="3dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="14dp"
-        android:layout_marginBottom="3dp"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/shouchangjia16" />
 </RelativeLayout>

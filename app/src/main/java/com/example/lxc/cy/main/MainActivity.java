@@ -14,6 +14,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 
@@ -26,6 +27,7 @@ import com.baidu.location.LocationClientOption;
 import com.example.lxc.cy.R;
 import com.example.lxc.cy.fragment.main_Fragment;
 import com.example.lxc.cy.fragment.main_FragmentAdapter;
+import com.example.lxc.cy.main.xc.XcActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager vp;
     private TextView text;
     private ImageButton search_Intent;
+    private RadioButton xc_btn;
 
     private LocationClient myLocationClient;
     private BDLocationListener listener = new MyLocationListener();
@@ -102,6 +105,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,search_main.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //行程按钮事件
+        xc_btn=(RadioButton) findViewById(R.id.xc);
+        xc_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, XcActivity.class);
                 startActivity(intent);
             }
         });

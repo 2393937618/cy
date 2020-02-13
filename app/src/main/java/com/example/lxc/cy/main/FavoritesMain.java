@@ -41,7 +41,7 @@ public class FavoritesMain extends AppCompatActivity {
         SimpleAdapter simpleAdapter=new SimpleAdapter(this,listitems,
                 R.layout.layout_favorites_main,
                 new String[]{"mingcheng"},
-                new int[]{R.id.shouchangjiamingcheng});
+                new int[]{R.id.xingchengbenmingcheng});
         list.setAdapter(simpleAdapter);
 
     }

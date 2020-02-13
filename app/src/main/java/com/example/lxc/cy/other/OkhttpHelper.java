@@ -14,11 +14,7 @@ import okhttp3.Response;
 
 public class OkhttpHelper {
 
-
-
     public static String[] JsonArrays(String result,String name) throws IOException, JSONException {
-
-
 
             JSONObject jsonObject = new JSONObject(result);
             JSONArray jsonArray = jsonObject.getJSONArray(name);
@@ -29,15 +25,8 @@ public class OkhttpHelper {
                 json[i] = jsonArray.getString(i);
             }
 
-
-
-
         return json;
-
-
     }
-
-
 
 
     //针对两条listView的数据解析
@@ -73,22 +62,14 @@ public class OkhttpHelper {
             j++;
         }
 
-
         list.add(json);
         list.add(json2);
 
-
-
-
         return list;
-
-
     }
 
 
     public static List<int[]> Circle_JsonArrays_int(String result,String name) throws IOException, JSONException {
-
-
 
         List<int[]> list = new ArrayList<>();
         JSONObject jsonObject = new JSONObject(result);
@@ -109,20 +90,11 @@ public class OkhttpHelper {
         list.add(json);
         list.add(json2);
 
-
-
         return list;
-
-
     }
 
 
-
-
-
     public static int[] JsonArrays_int(String result,String name) throws IOException, JSONException {
-
-
 
         JSONObject jsonObject = new JSONObject(result);
         JSONArray jsonArray = jsonObject.getJSONArray(name);
@@ -133,45 +105,22 @@ public class OkhttpHelper {
             json[i] = Integer.parseInt(jsonArray.getString(i));
         }
 
-
-
         return json;
-
-
     }
-
-
-
-
-
 
 
     public static String Okhttp_Get(String ip) throws IOException{
 
-
         OkHttpClient okHttpClient = new OkHttpClient();
 
-
-
-
-            Request request = new Request.Builder()
+        Request request = new Request.Builder()
                     .url(ip)
                     .get()
                     .build();
 
+        Response response = okHttpClient.newCall(request).execute();
 
-            Response response = okHttpClient.newCall(request).execute();
-
-
-
-
-            return response.body().string();
-
-
-
-
-
-
+        return response.body().string();
     }
 
 
