@@ -96,6 +96,8 @@
         <activity android:name=".main.MyJourney" />
         <activity android:name=".main.attention_main"/>
         <activity android:name=".main.xc.XcActivity"/>
+        <activity android:name=".main.xc.Xc_xiugai_Activity"/>
+        <activity android:name=".main.xc.Xc_Rename"/>
 
 
         <activity

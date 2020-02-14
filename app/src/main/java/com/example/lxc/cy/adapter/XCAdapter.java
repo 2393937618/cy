@@ -1,6 +1,7 @@
 package com.example.lxc.cy.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.lxc.cy.R;
 import com.example.lxc.cy.bean.XC;
+import com.example.lxc.cy.main.xc.Xc_xiugai_Activity;
 
 import java.util.List;
 
@@ -50,7 +52,7 @@ public class XCAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        XC xc = xc_list.get(position);
+        final XC xc = xc_list.get(position);
         ViewHolder viewHolder = null;
         if (convertView == null) {
             convertView = layoutinflater.inflate(R.layout.xc_list_item, null);
@@ -80,6 +82,11 @@ public class XCAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 Toast.makeText(context,"点击按钮",Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(context, Xc_xiugai_Activity.class);
+                intent.putExtra("img",xc.getUrl());
+                intent.putExtra("id",xc.getId());
+                intent.putExtra("name",xc.getName());
+                context.startActivity(intent);
             }
         });
         return convertView;

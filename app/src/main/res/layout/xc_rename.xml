@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/xc_rename_bg" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/imageView19"
+        android:layout_alignStart="@+id/imageView19"
+        android:layout_marginBottom="117dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/xc_rename_bg1" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignEnd="@+id/imageView19"
+        android:layout_alignTop="@+id/imageView21"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/xc_rename_bg2" />
+
+    <ImageView
+        android:id="@+id/xc_rename_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/imageView21"
+        android:layout_alignStart="@+id/imageView19"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="24dp"
+        app:srcCompat="@drawable/xc_rename_queding" />
+
+    <ImageView
+        android:id="@+id/xc_rename_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/xc_rename_btn1"
+        android:layout_marginStart="62dp"
+        android:layout_toEndOf="@+id/xc_rename_btn1"
+        app:srcCompat="@drawable/xc_rename_quxiao" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView21"
+        android:layout_alignStart="@+id/xc_rename_edit"
+        android:layout_marginBottom="4dp"
+        app:srcCompat="@drawable/xc_rename_inputbg" />
+
+    <EditText
+        android:id="@+id/xc_rename_edit"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/xc_rename_btn2"
+        android:layout_alignTop="@+id/imageView43"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+</RelativeLayout>
