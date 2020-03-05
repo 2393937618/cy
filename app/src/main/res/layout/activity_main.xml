@@ -4,60 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="#F7F6FB"
     tools:context=".main.MainActivity">
-    //顶部按钮
-    <LinearLayout
 
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/main_first_layout"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
         android:orientation="horizontal"
-        android:id="@+id/layout2"
-        android:background="#FCFCFC"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        >
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/main_location"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="广州"
-                android:layout_marginLeft="13dp"
-                android:layout_marginTop="10dp"/>
-        </RelativeLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/main_location"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="点击定位"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
         <ImageButton
             android:id="@+id/search"
-            android:layout_width="240dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="7dp"
+            android:layout_width="200dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
             android:background="@drawable/search"
+            android:layout_weight="1"
             />
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="30dp" />
+
         <ImageButton
             android:id="@+id/takephoto"
-            android:layout_width="27dp"
-            android:layout_height="22dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/camera"/>
-
-    </LinearLayout>//顶部按钮结束
-
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/camera"
+            android:layout_marginRight="10dp"
+            />
 
 
-    //广告
+    </LinearLayout>
+    <!--<LinearLayout-->
+
+        <!--android:layout_width="380dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/layout2"-->
+        <!--android:background="#FCFCFC"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--&gt;-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:id="@+id/main_location"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="广州"-->
+                <!--android:layout_marginLeft="13dp"-->
+                <!--android:layout_marginTop="10dp"/>-->
+        <!--</RelativeLayout>-->
+        <!--<ImageButton-->
+            <!--android:id="@+id/search"-->
+            <!--android:layout_width="240dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:background="@drawable/search"-->
+            <!--/>-->
+        <!--<ImageButton-->
+            <!--android:id="@+id/takephoto"-->
+            <!--android:layout_width="27dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:background="@drawable/camera"/>-->
+
+    <!--</LinearLayout>-->
+
     <ImageView
         android:id="@+id/gg"
         android:layout_width="300dp"
         android:layout_height="130dp"
-        android:layout_below="@+id/layout2"
+        android:layout_below="@+id/main_first_layout"
         android:background="@drawable/fm1"
         android:layout_marginTop="12.5dp"
-        android:layout_marginLeft="31dp"
+        android:layout_centerHorizontal="true"
 
         />
 
@@ -146,81 +184,90 @@
     </android.support.v4.view.ViewPager>
 
 
-    //底部布局
     <LinearLayout
         android:id="@+id/layout1_1"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:orientation="horizontal"
-        android:background="#F8F8FF"
+        android:background="#f8f8f8"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:gravity="center"
         >
         <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_gravity="center"
             android:orientation="horizontal"
-            android:layout_marginLeft="8dp"
             >
             <RadioButton
-                android:id="@+id/tj2"
+                android:id="@+id/main_recommend"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/planetearth_three"
+                android:layout_height="42dp"
                 android:button="@null"
                 android:text="推荐"
-                android:textColor="@color/js_one"
-                android:drawablePadding="2dp"
-                android:layout_marginLeft="25dp"
+                android:checked="true"
+                android:textColor="@color/bottom_text_true"
+                android:textSize="12sp"
                 android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="5"
                 />
             <RadioButton
 
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/fx"
-                android:drawableTop="@drawable/saturn"
+                android:layout_height="42dp"
+                android:id="@+id/main_find"
                 android:button="@null"
                 android:text="发现"
-
-                android:drawablePadding="2dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="3dp"/>
+                android:textColor="@color/bottom_text_false"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="5"
+                android:layout_marginRight="10dp"/>
             <ImageButton
-                android:id="@+id/jr"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:id="@+id/main_add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:background="@drawable/add"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:textAlignment="center"
+                android:layout_weight="0.2"
                 />
             <RadioButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/xc"
-                android:drawableTop="@drawable/rectangularsuitcase"
+                android:layout_height="42dp"
+                android:id="@+id/main_trip"
+                android:textColor="@color/bottom_text_false"
                 android:button="@null"
                 android:text="行程"
-
-                android:drawablePadding="2dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="3dp"/>
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="5"
+                android:layout_marginLeft="10dp"/>
             <RadioButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/wd"
-                android:drawableTop="@drawable/people"
+                android:layout_height="42dp"
+                android:id="@+id/main_my"
                 android:button="@null"
                 android:text="我的"
-
-                android:drawablePadding="2dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="3dp"/>
+                android:textSize="12sp"
+                android:textColor="@color/bottom_text_false"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="5"/>
 
         </RadioGroup>
 
     </LinearLayout>//底部布局结束
+
 
 
 

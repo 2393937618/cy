@@ -38,8 +38,7 @@ import okhttp3.Response;
 public class attention_main extends AppCompatActivity implements OnItemClickListener {
     ImageButton like,collect;
     TextView add;
-    String ip2 = "http://172.16.243.163:9000/main/attention/3";
-    String ip3 = "http://172.16.243.163:9000/like/";
+    String ip2 =getResources().getString(R.string.ip)+"main/attention/3";
 
 
     private int index = 0;

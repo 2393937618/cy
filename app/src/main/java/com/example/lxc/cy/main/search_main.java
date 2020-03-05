@@ -65,6 +65,10 @@ public class search_main extends AppCompatActivity {
                 mSuggestionSearch.requestSuggestion(new SuggestionSearchOption()
                         .city("北京")
                         .keyword("肯"));
+
+                Intent intent = new Intent(search_main.this,search_result.class);
+                intent.putExtra("city",text.getText().toString());
+                startActivity(intent);
             }
         });
 

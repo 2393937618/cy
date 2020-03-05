@@ -10,26 +10,51 @@
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
-        android:background="@color/ss_backgroundclor"
+        android:background="@drawable/btn_radius_res"
         android:orientation="horizontal">
         <ImageButton
-            android:id="@+id/picture_img"
+            android:id="@+id/city_delete"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/delete_city"
             android:button="@null"/>
 
-        <EditText
-            android:id="@+id/content_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="11dp"
-            android:layout_marginLeft="20dp"
+        <Button
+            android:id="@+id/choose_city"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
             android:background="@null"
-            android:text="请输入"
-            android:textSize="20sp"/>
+            android:hint="选择城市"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/date_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:layout_marginTop="11dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/date_num"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="0"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/date_reduce"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="—"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
 
 
 

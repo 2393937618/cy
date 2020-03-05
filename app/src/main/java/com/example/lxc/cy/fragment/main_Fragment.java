@@ -62,14 +62,14 @@ public class main_Fragment extends Fragment {
             }
         }
 
-        //这里用到了监听事件，目的是点击新闻列表中的新闻后跳转到完整的新闻界面
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getContext(),"hhh",Toast.LENGTH_SHORT).show();
-
-            }
-        });
+//        //这里用到了监听事件，目的是点击新闻列表中的新闻后跳转到完整的新闻界面
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Toast.makeText(getContext(),"hhh",Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
 
 
 

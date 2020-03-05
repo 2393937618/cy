@@ -8,6 +8,14 @@ public class SettingPersonBean {
     private String place;
     private String show;
 
+    public SettingPersonBean(String name, String sex, String bir, String place, String show) {
+        this.name = name;
+        this.sex = sex;
+        this.bir = bir;
+        this.place = place;
+        this.show = show;
+    }
+
     public String getName() {
         return name;
     }

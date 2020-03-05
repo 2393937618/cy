@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.attention_main"
+    android:background="#F7F6FB"
+    android:orientation="vertical">
+    //顶部按钮
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:id="@+id/photo"
+            android:layout_width="32dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/camera"/>
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/search"/>
+        <ImageButton
+            android:id="@+id/newss"
+            android:layout_width="32dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/view_top"/>
+
+    </LinearLayout>//顶部按钮结束
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="2dp"
+            android:background="#E8E8E8"
+            android:layout_marginTop="38dp"
+            />
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/attention_pst"
+            android:layout_gravity="center"
+            app:pstsIndicatorColor="@color/backgroundcolor"
+            app:pstsDividerColor="@color/select_button"
+            app:pstsIndicatorHeight="5dp"
+            >
+        </com.astuetz.PagerSlidingTabStrip>
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="2dp"
+            android:background="#E8E8E8"
+            android:layout_marginTop="38dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/attention_vp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/layout3"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout1">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout1_1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#f8f8f8"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/attention_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:button="@null"
+                android:text="推荐"
+                android:checked="true"
+                android:textColor="@color/bottom_text_false"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="5"
+                />
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:id="@+id/attention_find"
+                android:button="@null"
+                android:text="发现"
+                android:textColor="@color/bottom_text_true"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="5"
+                android:layout_marginRight="10dp"/>
+            <ImageButton
+                android:id="@+id/attention_add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/add"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:textAlignment="center"
+                android:layout_weight="0.2"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:id="@+id/attention_trip"
+                android:textColor="@color/bottom_text_false"
+                android:button="@null"
+                android:text="行程"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="5"
+                android:layout_marginLeft="10dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:id="@+id/attention_my"
+                android:button="@null"
+                android:text="我的"
+                android:textSize="12sp"
+                android:textColor="@color/bottom_text_false"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="5"/>
+
+        </RadioGroup>
+
+    </LinearLayout>//底部布局结束
+
+</RelativeLayout>

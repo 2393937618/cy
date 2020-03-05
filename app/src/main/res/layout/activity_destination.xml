@@ -42,19 +42,49 @@
             android:layout_marginTop="10dp"/>
 
     </LinearLayout>
-    <ImageView
-        android:id="@+id/destination_ss"
+    <LinearLayout
+        android:id="@+id/destinationName_layout"
+        android:layout_below="@+id/add_destinaton_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/local_country"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位到这里"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/destinationName_layout2"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_below="@+id/add_destinaton_top"
-        android:background="@drawable/fm21"
-        android:layout_marginTop="20dp"/>
+        android:layout_below="@+id/destinationName_layout"
+        android:orientation="horizontal">
+        <!--放置百度地图-->
+
+
+        <fragment
+            android:id="@+id/fragment"
+            android:name="com.baidu.mapapi.map.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/destination_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/destination_ss"
+        android:layout_below="@id/destinationName_layout2"
         android:layout_marginTop="10dp">
         <TextView
             android:layout_width="wrap_content"
@@ -69,26 +99,12 @@
             android:layout_marginLeft="50dp"
             android:layout_marginTop="10dp"
             android:text="景点简介，描述"/>
-        <ImageButton
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:background="@drawable/more"
-            android:layout_marginLeft="320dp"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageButton
-                android:layout_marginLeft="10dp"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/local_country"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="定位到这里"
-                android:layout_marginLeft="5dp"/>
-        </LinearLayout>//定位布局结束
+        <!--<ImageButton-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/more"-->
+            <!--android:layout_marginLeft="320dp"/>-->
+        //定位布局结束
 
     </LinearLayout>//景点简介布局结束
 

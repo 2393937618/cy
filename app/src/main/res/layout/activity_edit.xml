@@ -19,9 +19,9 @@
 
         <ImageButton
             android:id="@+id/close_btn"
-            android:layout_width="40px"
-            android:layout_height="40px"
-            android:layout_marginLeft="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/top_return"
             />
@@ -29,10 +29,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="发布"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:id="@+id/issue"
-            android:layout_marginLeft="270dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="15dp"
             />
 
     </LinearLayout>
@@ -43,24 +43,36 @@
         android:layout_below="@+id/add_edit_top"
         android:layout_marginLeft="17dp"
         android:layout_marginTop="10dp"
-        android:text="说点什么吧~~"
+        android:hint="说点什么吧~~"
         android:background="@null"
         />
     <ImageView
         android:id="@+id/photo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:background="@drawable/plus"
         android:layout_below="@+id/content_text"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/e_view"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
 
     <LinearLayout
         android:id="@+id/edit_layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@+id/photo">
+        android:layout_below="@+id/e_view">
         <ImageView
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
@@ -69,12 +81,12 @@
             android:src="@drawable/my_location"/>
         <EditText
             android:id="@+id/place_name"
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="20dp"
             android:background="@null"
-            android:textSize="17sp"
-            android:text="分享位置"/>
+            android:textSize="13sp"
+            android:hint="分享位置"/>
 
 
     </LinearLayout>
@@ -92,12 +104,12 @@
             android:src="@drawable/quanzi"/>
         <EditText
             android:id="@+id/text2"
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="20dp"
             android:background="@null"
-            android:textSize="17sp"
-            android:text="设置圈子"/>
+            android:textSize="13sp"
+            android:hint="设置圈子"/>
 
 
     </LinearLayout>

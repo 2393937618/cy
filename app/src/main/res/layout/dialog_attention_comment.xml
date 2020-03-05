@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_radius_res"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/comment_dialog_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/comment_dialog_close"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/comment_dialog_return" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/comment_dialog_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/comment_dialog_layout2"
+            android:layout_alignParentTop="true"
+            >
+
+        </ListView>
+
+
+
+        <LinearLayout
+            android:id="@+id/comment_dialog_layout2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <EditText
+                android:id="@+id/comment_dialog_edit"
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_radius_res"
+                android:hint="    写评论..."
+                android:textSize="13sp"
+                />
+
+            <Button
+                android:background="@drawable/btn_radius_res"
+                android:id="@+id/comment_dialog_send"
+                android:layout_width="50dp"
+                android:layout_height="26dp"
+                android:text="发送"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/comment_dialog_like"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/comment_dialog_like"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="666"-->
+            <!--android:layout_marginTop="-3dp"/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/comment_dialog_share"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/comment_dialog_share"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="3dp"/>-->
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

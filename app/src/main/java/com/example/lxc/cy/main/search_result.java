@@ -22,6 +22,7 @@ public class search_result extends AppCompatActivity{
 
     private PagerSlidingTabStrip sp;
     private ViewPager vp;
+    private String city;
 
 //    private RadioGroup gp;
 //    private RadioButton rb1,rb2,rb3,rb4,rb5;
@@ -36,6 +37,8 @@ public class search_result extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_result);
 
+        final Intent intent = getIntent();
+        city = intent.getStringExtra("city");
 
 
         init();

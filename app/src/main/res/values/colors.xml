@@ -9,5 +9,7 @@
     <color name="ss_backgroundclor">#e9e9e9</color>
     <color name="select_button">#7EC0EE</color>
     <color name="select_no_button">#E3E3E3</color>
+    <color name="bottom_text_true">#FFE8BC</color>
+    <color name="bottom_text_false">#545454</color>
 
 </resources>

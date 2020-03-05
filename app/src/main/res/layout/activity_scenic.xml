@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.cityActivity"
+    android:background="#F7F6FB"
+    >
+    <ImageView
+        android:id="@+id/scenic_return"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/shizhizhuye3" />
+
+
+    <TextView
+        android:id="@+id/scenic_text"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:text="选择游玩场景"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+    <ScrollView
+        android:layout_below="@+id/scenic_text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/finish_travel"
+        android:layout_centerHorizontal="true"
+        >
+        <LinearLayout
+            android:id="@+id/playParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/finish_travel"
+        android:background="@drawable/btn_radius_res"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="生成行程"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,11 +1,16 @@
 package com.example.lxc.cy.main;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.lxc.cy.R;
 
@@ -13,10 +18,14 @@ public class SettingMain extends AppCompatActivity {
     ImageView view1,view2,view3,view4;
     EditText e1,e2,e3,e4,e5;
     String s1,s2,s3,s4,s5;
+    LinearLayout settingMainEdition,settingMainUserAgreement,settingMainIntent,settingMainPassword;
+    TextView settingMainText;
+    ImageView settingMainReturn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_main);
+
 
 //        view1=(ImageView)findViewById(R.id.gerenxinxibtn_1);
 //        view1.setOnClickListener(new View.OnClickListener() {
@@ -25,6 +34,7 @@ public class SettingMain extends AppCompatActivity {
 //                finish();
 //            }
 //        });
+
 //
 //        view2=(ImageView)findViewById(R.id.gerenxinxibtn_2);
 //        view2.setOnClickListener(new View.OnClickListener() {
@@ -60,5 +70,38 @@ public class SettingMain extends AppCompatActivity {
 //
 //            }
 //        });
+
+        SettingMain_init();
+        SettingMain_click();
     }
+
+
+    private void SettingMain_init(){
+
+        settingMainEdition = (LinearLayout) findViewById(R.id.setting_main_edition);
+        settingMainUserAgreement = (LinearLayout) findViewById(R.id.setting_main_userAgreement);
+        settingMainIntent = (LinearLayout) findViewById(R.id.setting_main_intent);
+        settingMainPassword = (LinearLayout) findViewById(R.id.setting_main_password);
+        settingMainText = (TextView) findViewById(R.id.setting_main_cancellation);
+        settingMainReturn = (ImageView) findViewById(R.id.setting_main_return);
+
+    }
+
+    private void SettingMain_click(){
+        settingMainText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences sharedPreferences = getSharedPreferences("id",Context.MODE_PRIVATE);
+                sharedPreferences.edit().clear().commit();
+                Toast.makeText(SettingMain.this,"注销成功",Toast.LENGTH_SHORT).show();
+                finish();
+                startActivity(new Intent(SettingMain.this,personal_home.class));
+            }
+        });
+    }
+
+
+
+
+
 }

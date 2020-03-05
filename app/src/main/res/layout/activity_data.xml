@@ -2,120 +2,214 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F7F6FB">
 
-    <LinearLayout
-        android:id="@+id/data_top"
-        android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:orientation="horizontal"
-        >
-
-
-        <ImageButton
-            android:id="@+id/close_btn"
-            android:layout_width="50px"
-            android:layout_height="50px"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="13dp"
-            android:background="@drawable/false_data2"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="请选择日期"
-            android:textSize="20sp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="10dp"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_alignParentLeft="true"
+    <ImageView
+        android:id="@+id/date_return"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/data_top"
-        android:orientation="vertical">
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/shizhizhuye3" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:layout_marginLeft="5dp"
-                android:text="开始时间" />
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:text="选择日期"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_below="@+id/textView16"
-                android:textSize="15sp"
-                android:layout_marginLeft="100dp"
-                android:text="返程时间" />
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/date_return"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/setout"/>
 
-            <TextView
-                android:id="@+id/begintextview"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:text="点击输入时间" />
+        <Button
+            android:id="@+id/SetOut"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_radius_res"
+            android:hint="选择出发日期"/>
 
-            <TextView
-                android:id="@+id/finishtextview"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:text="点击输入时间" />
-        </LinearLayout>
     </LinearLayout>
 
-    <DatePicker
-        android:id="@+id/begindate"
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/datapagenext"
-        android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:visibility="visible" />
 
-    <DatePicker
-        android:id="@+id/finishdate"
+
+    <LinearLayout
+        android:id="@+id/date_layout2"
         android:layout_width="300dp"
-        android:layout_height="365dp"
-        android:layout_alignLeft="@+id/begindate"
-        android:layout_below="@id/linearLayout"
-        android:layout_centerVertical="true"
-        android:visibility="invisible"
-        />
+        android:layout_height="50dp"
+        android:layout_below="@id/date_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrive"/>
+
+        <Button
+            android:id="@+id/Arrive"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_radius_res"
+            android:hint="选择到达日期"/>
+
+    </LinearLayout>
+
 
 
     <Button
-        android:id="@+id/datapagenext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
+        android:id="@+id/next_need"
+        android:background="@drawable/btn_radius_res"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
         android:text="下一步"
-        android:enabled="false"/>
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/data_top"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="43dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/close_btn"-->
+            <!--android:layout_width="50px"-->
+            <!--android:layout_height="50px"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginTop="13dp"-->
+            <!--android:background="@drawable/false_data2"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="请选择日期"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="58dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/data_top"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView19"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="15sp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:text="开始时间" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView22"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_below="@+id/textView16"-->
+                <!--android:textSize="15sp"-->
+                <!--android:layout_marginLeft="100dp"-->
+                <!--android:text="返程时间" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/begintextview"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="点击输入时间" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/finishtextview"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="点击输入时间" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<DatePicker-->
+        <!--android:id="@+id/begindate"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/datapagenext"-->
+        <!--android:layout_below="@+id/linearLayout"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:visibility="visible" />-->
+
+    <!--<DatePicker-->
+        <!--android:id="@+id/finishdate"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="365dp"-->
+        <!--android:layout_alignLeft="@+id/begindate"-->
+        <!--android:layout_below="@id/linearLayout"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:visibility="invisible"-->
+        <!--/>-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/datapagenext"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:text="下一步"-->
+        <!--android:enabled="false"/>-->
 
 </RelativeLayout>

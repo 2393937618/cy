@@ -6,36 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".main.needActivity"
     android:orientation="vertical"
+    android:background="#F7F6FB"
     >
-    //顶部布局
-    <LinearLayout
-        android:id="@+id/data_top"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
+    <ImageView
+        android:id="@+id/need_return"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/shizhizhuye3" />
 
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true">
 
-
-        <ImageButton
-            android:id="@+id/close_btn"
-            android:layout_width="40px"
-            android:layout_height="40px"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="13dp"
-            android:background="@drawable/top_return"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="基本需求"
-            android:textSize="20sp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="10dp"
-            />
-
-    </LinearLayout>//顶部按钮结束
+    <TextView
+        android:id="@+id/need_text"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:text="选择需求"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
 
 
@@ -45,31 +38,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:scrollbars="vertical"
-        android:layout_below="@+id/data_top"
+        android:layout_below="@+id/need_return"
         android:layout_above="@+id/next_country">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-            //广告位布局
-            <LinearLayout
-                android:id="@+id/add_need_gg"
-                android:layout_width="match_parent"
-                android:layout_height="110dp"
-
-                android:background="@drawable/fm13"
-
-                >
-
-                <ImageButton
-                    android:id="@+id/photo_add"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="50dp"
-                    android:background="@drawable/need_add"/>
-            </LinearLayout>//广告位布局结束
 
             //总按钮布局
             <LinearLayout
@@ -344,10 +319,12 @@
     <Button
         android:layout_alignParentBottom="true"
         android:id="@+id/next_country"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:background="@drawable/btn_radius_res"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
         android:text="下一步"
         android:textSize="15sp"
-
+        android:layout_marginBottom="10dp"
         />
 </RelativeLayout>

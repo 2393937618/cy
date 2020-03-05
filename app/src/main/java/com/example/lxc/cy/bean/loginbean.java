@@ -3,19 +3,24 @@ package com.example.lxc.cy.bean;
 public class loginbean {
 
     private static final long serialVersionUID = 4243745170036457009L;
-    private int id;
+    private String tel;
     private String password;
+
+    public loginbean(String tel, String password) {
+        this.tel = tel;
+        this.password = password;
+    }
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
 
-    public int getId() {
-        return id;
+    public String getTel() {
+        return tel;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     public String getPassword() {

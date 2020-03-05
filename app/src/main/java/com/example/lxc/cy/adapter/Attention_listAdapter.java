@@ -37,6 +37,7 @@ public class Attention_listAdapter extends BaseAdapter {
     private Context mContext;
     String note_id,user_id;
     ImageButton likes;
+    final String ip = mContext.getResources().getString(R.string.ip);
 
 
 
@@ -175,7 +176,7 @@ public class Attention_listAdapter extends BaseAdapter {
                     OkHttpClient okHttpClient = new OkHttpClient();
                     //2.创建Request对象，设置一个url地址,设置请求方式。
                     Request request = new Request.Builder()
-                            .url("http://172.16.243.163:9000/like/" + note_id)
+                            .url(ip+"like/" + note_id)
                             .get()
                             .build();
 
@@ -212,7 +213,7 @@ public class Attention_listAdapter extends BaseAdapter {
                     OkHttpClient okHttpClient = new OkHttpClient();
                     //2.创建Request对象，设置一个url地址,设置请求方式。
                     Request request = new Request.Builder()
-                            .url("http://172.16.243.163:9000/dont_like/" + note_id)
+                            .url(ip+"dont_like/" + note_id)
                             .get()
                             .build();
 

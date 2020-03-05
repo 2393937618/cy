@@ -1,6 +1,7 @@
 package com.example.lxc.cy.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.lxc.cy.R;
 import com.example.lxc.cy.bean.Mainbean;
+import com.example.lxc.cy.main.destination;
 
 import java.util.List;
 
@@ -59,8 +61,12 @@ public class MainListViewAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
 
-                ImageView imageView = (ImageView)v;
                 Toast.makeText(context,"点击图片",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context,destination.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+
+
 
 
             }

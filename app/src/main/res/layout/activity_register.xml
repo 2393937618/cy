@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#fffdf6"
+    android:background="#F7F6FB"
     android:orientation="vertical">
     <ImageView
-        android:id="@+id/zhuceyebtn-1"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_alignParentLeft="true"
+        android:id="@+id/register_Return"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="20dp"
@@ -20,86 +19,206 @@
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/shizhizhuye3" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_alignBottom="@+id/zhuceyebtn-1"
-        android:layout_alignTop="@+id/zhuceyebtn-1"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/zhuche" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_alignLeft="@+id/zhuceyebtn-1"
-        android:layout_alignStart="@+id/zhuceyebtn-1"
-        android:layout_below="@+id/zhuceyebtn-1"
-        android:layout_marginTop="57dp"
-        app:srcCompat="@drawable/personal2" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="50dp"
         android:layout_height="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView7"
-        android:layout_marginTop="55dp"
-        app:srcCompat="@drawable/zhuceye1" />
+        android:text="注册"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
-    <EditText
-        android:id="@+id/zhuceedit-1"
+    <TextView
+        android:id="@+id/register_text2"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:text="快加入畅游吧"
+        android:textSize="17sp"
+        android:layout_below="@+id/register_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/register_layout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/register_text2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_radius_res"
+        >
+
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/atar"
+            android:layout_marginLeft="50dp"/>
+
+        <EditText
+            android:id="@+id/register_Phone"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_radius_res"
+            android:hint="输入手机号码"
+            android:textSize="13sp"
+            android:inputType="number" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/register_layout2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/register_layout"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_radius_res"
+        >
+
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/dlock"
+            android:layout_marginLeft="50dp"/>
+
+        <EditText
+            android:id="@+id/register_Password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_radius_res"
+            android:hint="输入密码"
+            android:textSize="13sp"
+            android:inputType="textPassword" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/register_layout4"
+        android:layout_width="250dp"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:layout_below="@+id/register_layout2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/register_layout3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/edittext_radius_res"
+        >
+
+
+        <EditText
+            android:id="@+id/register_YZM"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:background="@drawable/edittext_radius_res"
+            android:hint="输入验证码"
+            android:textSize="13sp"
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/YZM_btn"
         android:layout_width="wrap_content"
+        android:text="获取验证码"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:background="@drawable/person_radius_res"
+        android:layout_marginLeft="15dp"
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_Btn"
+        android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_alignBottom="@+id/imageView11"
-        android:layout_toEndOf="@+id/imageView11"
-        android:layout_toRightOf="@+id/imageView11"
-        android:ems="10"
-        android:inputType="phone" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/person_radius_res"
+        android:layout_below="@id/register_layout4"
+        android:text="注册"
+        android:textAlignment="center"/>
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_alignLeft="@+id/imageView7"
-        android:layout_alignStart="@+id/imageView7"
-        android:layout_below="@+id/imageView11"
-        android:layout_marginTop="57dp"
-        app:srcCompat="@drawable/dlock" />
 
-    <EditText
-        android:id="@+id/zhuceedit-2"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_above="@+id/zhuceedit-3"
-        android:layout_toEndOf="@+id/imageView11"
-        android:layout_toRightOf="@+id/imageView11"
-        android:ems="10"
-        android:inputType="textPassword" />
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView12"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignLeft="@+id/imageView7"-->
+        <!--android:layout_alignStart="@+id/imageView7"-->
+        <!--android:layout_below="@+id/register_layout"-->
+        <!--android:layout_marginTop="57dp"-->
+        <!--app:srcCompat="@drawable/dlock" />-->
 
-    <EditText
-        android:id="@+id/zhuceedit-3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView12"
-        android:layout_alignStart="@+id/imageView12"
-        android:layout_below="@+id/imageView12"
-        android:layout_marginTop="39dp"
-        android:ems="10"
-        android:hint="请输入验证码"
-        android:inputType="textPersonName" />
+    <!--<EditText-->
+        <!--android:id="@+id/zhuceedit-2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_above="@+id/zhuceedit-3"-->
+        <!--android:layout_toEndOf="@+id/imageView11"-->
+        <!--android:layout_toRightOf="@+id/imageView11"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPassword" />-->
 
-    <ImageView
-        android:id="@+id/zhuceyebtn-2"
-        android:layout_width="wrap_content"
-        android:layout_height="25dp"
-        android:layout_alignBottom="@+id/zhuceedit-3"
-        android:layout_toEndOf="@+id/zhuceedit-3"
-        android:layout_toRightOf="@+id/zhuceedit-3"
-        android:background="#00000000"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/fasong" />
+    <!--<EditText-->
+        <!--android:id="@+id/zhuceedit-3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/imageView12"-->
+        <!--android:layout_alignStart="@+id/imageView12"-->
+        <!--android:layout_below="@+id/imageView12"-->
+        <!--android:layout_marginTop="39dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="请输入验证码"-->
+        <!--android:inputType="textPersonName" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/zhuceyebtn-2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignBottom="@+id/zhuceedit-3"-->
+        <!--android:layout_toEndOf="@+id/zhuceedit-3"-->
+        <!--android:layout_toRightOf="@+id/zhuceedit-3"-->
+        <!--android:background="#00000000"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--app:srcCompat="@drawable/fasong" />-->
 
 </RelativeLayout>
