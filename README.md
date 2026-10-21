@@ -43,9 +43,9 @@ sh ./gradlew -p maintenance-tests --no-daemon test
 
 ## 构建 Android App
 
-历史构建版本：JDK 8、Gradle 4.6、Android Gradle Plugin 3.2.0、Android SDK Platform 28，最低 Android API 21。不要直接用 JDK 17 运行这个版本的 Gradle。
+已验证构建版本：JDK 8、Gradle 4.6、Android Gradle Plugin 3.2.0、Android SDK Platform 28、Build Tools 28.0.3，最低 Android API 21。不要直接用 JDK 17 运行这个版本的 Gradle。
 
-1. 安装 Android SDK Platform 28 和对应 Build Tools。
+1. 安装 Android SDK Platform 28 和 Build Tools 28.0.3。
 2. 在未提交的 `local.properties` 中设置 `sdk.dir=/your/android/sdk`，或设置 `ANDROID_HOME`。
 3. 为自己的应用配置百度 SDK 和 Mob 短信服务；业务接口地址在 `app/src/main/res/values/strings.xml`。历史代码中仍有其他固定地址和用户 ID，需要逐步整理。
 4. 执行：
@@ -54,7 +54,7 @@ sh ./gradlew -p maintenance-tests --no-daemon test
 sh ./gradlew :app:assembleDebug
 ```
 
-项目仍使用旧版 Support Library、JCenter/JitPack 依赖和历史 SDK。完整构建及运行情况见 [维护记录](docs/maintenance.md)，请勿把网络测试通过等同于 APK 可用。
+2026-10-21 已在上述环境完成 Debug APK 构建。项目仍使用旧版 Support Library、JCenter 镜像/JitPack 依赖和历史 SDK；构建成功不代表设备运行或后端联调通过。详细结果见 [维护记录](docs/maintenance.md)。
 
 ## 参与维护
 
