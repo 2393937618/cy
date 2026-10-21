@@ -1,7 +1,5 @@
 package com.example.lxc.cy.other;
 
-import com.example.lxc.cy.R;
-import com.example.lxc.cy.bean.FindImgBean;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
@@ -41,9 +39,12 @@ public class OkhttpHelper {
                 .get()
                 .build();
 
-        Response response = okHttpClient.newCall(request).execute();
-
-        return response.body().string();
+        try (Response response = okHttpClient.newCall(request).execute()) {
+            if (!response.isSuccessful()) {
+                throw new IOException("HTTP " + response.code());
+            }
+            return response.body().string();
+        }
     }
 
     /**
@@ -68,9 +69,12 @@ public class OkhttpHelper {
                 .build();
         OkHttpClient okHttpClient = new OkHttpClient();
         //返回值获取
-        Response response = okHttpClient.newCall(request).execute();
-
-        return response.body().string();
+        try (Response response = okHttpClient.newCall(request).execute()) {
+            if (!response.isSuccessful()) {
+                throw new IOException("HTTP " + response.code());
+            }
+            return response.body().string();
+        }
 
 
 
@@ -116,9 +120,12 @@ public class OkhttpHelper {
                 .url(url)
                 .post(requestBody)
                 .build();
-        Response response = okHttpClient.newCall(request).execute();
-
-        return response.body().string();
+        try (Response response = okHttpClient.newCall(request).execute()) {
+            if (!response.isSuccessful()) {
+                throw new IOException("HTTP " + response.code());
+            }
+            return response.body().string();
+        }
 
 
     }
