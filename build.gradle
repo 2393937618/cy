@@ -4,12 +4,13 @@ buildscript {
     
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        maven { url 'https://mvn.mob.com/android' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.0'
         // 注册MobSDK
-        classpath "com.mob.sdk:MobSDK:2018.0319.1724"
+        classpath "com.mob.sdk:MobSDK2022:2026.0414.1436"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -19,8 +20,10 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
+        maven { url 'https://mvn.mob.com/android' }
+        // Preserve the original coordinates of dependencies formerly hosted on JCenter.
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         maven { url 'https://maven.google.com' }
         maven { url 'https://jitpack.io' }
     }
