@@ -125,6 +125,9 @@ public class ScenicActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_CANCELED || data == null) {
+            return;
+        }
         switch (requestCode){
             //景点设置
             case 100:
